@@ -1,0 +1,234 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[Path = ./fonts/Lato/,
+ Extension = .ttf,
+ UprightFont = *-Regular,
+ BoldFont = *-Bold,
+ ItalicFont = *-Italic,
+ SmallCapsFont = *-Medium]
+{Lato}
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[margin=0.5in]{geometry}
+
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\definecolor{sectiontitle}{rgb}{0.5, 0, 0.2}
+
+\usepackage{hyperref} % Required for adding links and customizing them
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\usepackage{multicol}   % column inserting tool
+\setlength{\columnsep}{0cm}
+
+\usepackage{fontawesome} % Used to add social icons
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+% \font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge \textcolor{sectiontitle}{Arib Alam}}\bigskip\par} % Your name
+
+\begin{multicols}{3}
+\faMedium\ {\href{https://medium.com/@aribalam64}{\ aribalam64}}\\
+\faGithub\ {\href{https://github.com/aribalam}{\ aribalam}}\\
+\faLinkedinSquare\ {\href{https://www.linkedin.com/in/arib-a-792058102/}{\ arib-a-792058102}}
+\vfill
+\columnbreak
+\centering Lal Bahadur Shastri Hall of Residence IIT Kharagpur\\
+\centering West Bengal - 721302, India\\
+\vfill
+\columnbreak
+\raggedright\hfill \faEnvelope\ {\href{mailto:arib.alam.iitkgp@gmail.com}{\ arib.alam.iitkgp@gmail.com}}\\
+\raggedright\hfill \faPhone\ \ +91-827-488-8248\\
+\end{multicols}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{\textcolor{sectiontitle}{Education}}
+
+\begin{tabular}{r|l}	
+
+\textbf{2017 - 2022} & Integrated MSc in \textbf{Mathematics and Computing, IIT Kharagpur}\\
+&\normalsize \textsc{CGPA}: \textbf{9.62}/10.0\\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{\textcolor{sectiontitle}{Work Experience}}
+
+\begin{tabular}{r|p{15cm}}
+\textbf{May 2018} &  \textbf{Web Developer at ThinkC Infinitum Academy} \hfill \textbf{West Bengal, India}\\
+\textbf{August 2018} & 
+\begin{itemize}
+    \item Developed a back-end server using Django for an online shopping website of pets.
+    \item Developed an interactive user interface for database management of schools. Part of a website for online generation of report cards.
+    \item Learned the basics of Web Development, REST APIs, Django, JavaScript and jQuery
+\end{itemize}
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{\textcolor{sectiontitle}{Technical Skills}}
+
+\begin{tabular}{r|l}
+
+\textbf{Programming Languages} & Java | Python | JavaScript | C | HTML | CSS \\
+
+\textbf{Database Management} & MySQL | MongoDB | Neo4j | PostgreSQL\\
+
+\textbf{Systems/Cloud Management} & Docker | Heroku | Microsoft Azure | Google App Engine | AWS\\
+
+\textbf{Web Technologies} & REST | Semantic Web | Django | Flask | ReactJS \\
+
+\textbf{Others} & Android | OpenGL | Latex\\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%   PROJECTS
+%----------------------------------------------------------------------------------------
+
+\section{\textcolor{sectiontitle}{Projects}}
+\begin{itemize}
+    \item \textbf{\href{https://github.com/lbs-iitkgp/Opensoft-2019}{Lawbranian}, OpenSoft 2019 IIT Kharagpur}\\
+    A contributing member of the OpenSoft team for the development of a search engine web application for legal systems. The application uses multiple technologies such as NLP, ElasticSearch, Graph Databases, MongoDB, Flask and ReactJS.
+    \item \textbf{\href{https://github.com/aribalam/BingImagify}{BingImagify}, get your Bing images on your desktop}\\
+    A python script that downloads Bing daily images and sets it as a home screen wallpaper. The project involves cron job handling and scheduling.
+    \item \textbf{\href{https://github.com/the-ethan-hunt/B.E.N.J.I.}{B.E.N.J.I.}, Kharagpur Winter of Code}\\
+    A contributor at B.E.N.J.I., a digital assistant using voice recognition.
+    \item \textbf{Festival D' Agusto, A news feed Android App}\\
+    An Android app for displaying live news feeds of a school fest named Festival D' Agusto.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+
+\section{\textcolor{sectiontitle}{Other Achievements}}
+\begin{itemize}
+    \item \textbf{Case Study General Championship, 2019}\\
+    Member of \textbf{gold winning team} of Case Study of LBS Hall. The problem statement was define a strategy to enter the market of Adventure Tourism in India.
+    \item \textbf{Department Change}\\
+    Successfully changed my department from Applied Geology to Mathematics and Computing after securing a \textbf{GPA of 9.64}. Was among the \textbf{Top 20 students (out of 11000)} of the Institute after first year.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	Relevant Courses
+%----------------------------------------------------------------------------------------
+
+\section{\textcolor{sectiontitle}{Relevant Courses}}
+\begin{tabular}{r|l}
+\textbf{Computer Science} & Programming and Data Structures | Algorithms 1 and 2 | Design and Analysis of Algorithms |\\
+& Software engineering\\
+\textbf{Mathematics} & Probability and Statistics | Discrete  Mathematics\\
+\end{tabular}
+
+% %----------------------------------------------------------------------------------------
+
+% \newpage
+
+% %----------------------------------------------------------------------------------------
+% %	GRADE TABLES
+% %----------------------------------------------------------------------------------------
+
+% \par{\centering\Large \hypertarget{grds}{Master of Science in \textsc{Finance}}\par}\large{\centering Grades\par}\normalsize
+
+% \begin{center}
+% \begin{tabular}{lcc}
+% \multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade}&\textsc{Credit Hrs}\\ \hline
+% Corporate Finance (Valuation) & 25 & 6\\
+% Financial Statement Analysis & 28 & 6\\
+% Statistics & 27 & 6\\
+% Theory of Finance & 26 & 6\\
+% Quantitative Methods for Finance & 30 & 6\\
+% Econometrics & 24 & 6\\
+% Derivatives & 31 & 6\\
+% Management of Financial and Insurance Companies & 30 & 6\\
+% Business Law & 31 & 6\\
+% Investment Banking	& 28 & 6\\ \\		
+% Behavioral Models for Economics and Finance	 & 29 & 6\\
+% Numerical Methods for Finance & 29 & 6\\
+% Advanced Derivatives & 30 & 6\\
+% Fixed Income (Advanced Methods) & 30 & 6\\ \\
+% English Language & 30 &	4\\
+% French Language & 31 &	4\\	
+% Internship & & 8\\		
+% Final Thesis & & 20\\	
+% & Total & 120\\\cline{2-3}
+% &\textsc{Gpa}&\textbf{8.0}
+% \end{tabular}
+% \end{center}
+% \bigskip
+% \hrule
+% \bigskip
+
+% %------------------------------------------------
+
+% \bigskip
+
+% \par{\centering\Large \hypertarget{grds_usc}{Exchange Program at \textsc{usc}, Los Angeles}\par}\large{\centering Grades\par}\normalsize
+
+% \begin{center}
+% \begin{tabular}{lcc}
+% \multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade} & \textsc{Grade Points}\\ 
+% \hline
+% Corporate Financial Strategy & A & 4\\
+% Derivatives & A & 4\\
+% Money, Credit, and Banking & A & 4\\
+% Business Strategy & A- & 3.5\\
+% & &\\\cline{2-3}
+% & \textsc{Gpa} & \textbf{3.875}
+% \end{tabular}
+% \end{center}
+
+% %----------------------------------------------------------------------------------------
+
+\end{document}
